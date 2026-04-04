@@ -23,7 +23,7 @@ function name_val(){
                 msg.style.color = "red";
                 return;
             }
-    }
+        }   
 
     let n_length = name.split(" ");
     if (n_length.length < 2)
