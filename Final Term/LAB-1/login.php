@@ -35,8 +35,8 @@
             <input type="checkbox" name="check" id=""> Remember
             <br><br>
 
-            <button type="button">Submit</button>
-            <a>Forgot Password</a>
+            <button type="submit">Submit</button>
+            <a href ="#">Forgot Password</a>
         </form>
     </fieldset>
     </div>
