@@ -13,63 +13,61 @@
             /* background-color: bisque; */
         }
         label{
-            /* display: inline-block; */
-            width: 120px;
-        }
+                display: inline-block;
+                width: 140px;
+            }
     </style>
 </head>
 <body>
     <div class="container">
         <fieldset style="width: 500px; background-color:bisque;">
         <legend><h2>REGISTRATION</h2></legend>
-        <form action="val.php" method="post"  autocomplete="off">
-            <label>
-                Name: <input type="text" name="name">
-                <hr>
-            </label>
-            <br>
-            <label>
-                Email: 
-                <input type="text" name="email">
-                <hr>
-            </label>
-            <br>
-            <label>
-                Username: 
-                <input type="text" name="username" >
-                <hr>
-            </label>
-            <br>
-            <label>
-                Password: 
-                <input type="password" name="password" >
-                <hr>
-            </label>
-            <br>
-            <label>
-                Confirm Password: 
-                <input type="password" name="new_pass">
-                <hr>
-            </label>
-            <br>
+        <form action="val.php" method="post">
+            
+            <label>Name</label>:
+            <input type="text" name="name">
+            
+            <br><br><hr>
+            
+            <label>Email</label>:          
+            <input type="text" name="email">
+            
+            <br><br><hr>
+
+            <label>Username</label>:
+            <input type="text" name="username" > 
+            
+            <br><br><hr>
+            
+            <label>Password</label>:
+            <input type="password" name="password" >
+        
+            <br><br><hr>
+            
+            <label>Confirm Password</label>:
+            <input type="password" name="con_pass">
+            
+            <br><br><hr>
+            
             <fieldset>
                 <legend>Gender</legend>
                 <input type="radio" name="gender" value="Male">Male
                 <input type="radio" name="gender" value="Female">Female
-                <input type="radio" name="gender" value="Other">Other
-                <hr>
+                <input type="radio" name="gender" value="Other">Other    
             </fieldset>
-            <br>
+            <br><br><hr>
+            
             <fieldset>
                 <legend>Date of Birth</legend>
-                <input type="date">
+                <input type="date" name="dob">
                 <br>
                 <small><i>dd/mm/yy</i></small>
-                <hr>
             </fieldset>
-            <br>
+            <br><hr>
+            
             <button type="submit" name="submit" style="background-color: aqua;">Submit</button>
-            <button type="button" name="reset" style="background-color: aquamarine;">Reset</button>
+            <button type="reset" name="reset" style="background-color: aquamarine;">Reset</button>
+        
         </form>
     </fieldset>
     </div>
