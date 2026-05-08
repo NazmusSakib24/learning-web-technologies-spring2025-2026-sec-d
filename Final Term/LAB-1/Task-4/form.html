@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 500px; */
+            /* background-color: bisque; */
+        }
+        label{
+            /* display: inline-block; */
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <fieldset style="width: 500px; background-color:bisque;">
+        <legend><h2>REGISTRATION</h2></legend>
+        <form action="val.php" method="post"  autocomplete="off">
+            <label>
+                Name: <input type="text" name="name">
+                <hr>
+            </label>
+            <br>
+            <label>
+                Email: 
+                <input type="text" name="email">
+                <hr>
+            </label>
+            <br>
+            <label>
+                Username: 
+                <input type="text" name="username" >
+                <hr>
+            </label>
+            <br>
+            <label>
+                Password: 
+                <input type="password" name="password" >
+                <hr>
+            </label>
+            <br>
+            <label>
+                Confirm Password: 
+                <input type="password" name="new_pass">
+                <hr>
+            </label>
+            <br>
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+                <input type="radio" name="gender" value="Other">Other
+                <hr>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Date of Birth</legend>
+                <input type="date">
+                <br>
+                <small><i>dd/mm/yy</i></small>
+                <hr>
+            </fieldset>
+            <br>
+            <button type="submit" name="submit" style="background-color: aqua;">Submit</button>
+            <button type="button" name="reset" style="background-color: aquamarine;">Reset</button>
+        </form>
+    </fieldset>
+    </div>
+</body>
+</html>
