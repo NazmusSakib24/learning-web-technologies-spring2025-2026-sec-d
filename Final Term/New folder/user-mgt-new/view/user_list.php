@@ -1,7 +1,8 @@
 <?php
     session_start();
-    
+
     if(!isset($_SESSION['users'])){
+
         $users = [
             ['id'=>1, 'username'=>'abc', 'email'=>'abc@aiub.edu'],
             ['id'=>2, 'username'=>'xyz', 'email'=>'xyz@aiub.edu'],
@@ -9,8 +10,11 @@
             ['id'=>4, 'username'=>'test', 'email'=>'test@aiub.edu'],
             ['id'=>5, 'username'=>'pqr', 'email'=>'pqr@aiub.edu']
         ];
+
         $_SESSION['users'] = $users;
+
     }else{
+
         $users = $_SESSION['users'];
     }
 ?>
@@ -43,7 +47,7 @@
                 <td>
                     <a href="edit.php?id=<?=$user['id']?>"> EDIT </a> |
                     <a href="details.php?id=<?=$user['id']?>"> Details </a> |
-                    <a href="delete.php?id=<?=$user['id']?>"> Delete </a>
+                    <a href="delete.php?id=<?=$user['id']?>"> Delete </a> 
                 </td>
             </tr>
     <?php }?>
@@ -51,6 +55,3 @@
         </table>
 </body>
 </html>
-
-
-

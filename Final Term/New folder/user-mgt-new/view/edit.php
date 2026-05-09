@@ -1,6 +1,7 @@
 <?php
     session_start();
     $users = $_SESSION['users'];
+
     $id = isset($_GET['id']) ? $_GET['id'] : '';
 
     $user =[];
